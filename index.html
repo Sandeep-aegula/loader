@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotating Loader</title>
+<style>
+  body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.loader {
+  width: 60px;
+  height: 60px;
+  border-top: 6px solid red;
+  border-right: 6px solid green;
+  border-bottom: 6px solid blue;
+  border-left: 6px solid yellow;
+  border-radius: 50%;
+  transition: transform 1s ease-in-out;
+}
+
+.loader:hover {
+  transform: rotate(1080deg); 
+}
+
+.loader:hover:out {
+  transform: rotate(-1080deg); 
+}
+
+</style>
+</head>
+<body>
+  <div class="loader"></div>
+</body>
+</html>
